@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const PlantSchema = new mongoose.Schema({
   name: { type: String, required: true },
   type: { type: String, required: true }, // Tomato, Chili, etc.
-  description: { type: String },
+  // description: { type: String },
   stock: { type: Number, default: 0 },
   //   growthRequirements: { type: String },
   image: { type: String },

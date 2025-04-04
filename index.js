@@ -12,11 +12,18 @@ dotenv.config();
 const app = express();
 
 // Middleware
+// app.use(
+//   cors({
+//     origin: ["https://nursery-frontend-ywl9.onrender.com"],
+//   })
+// );
+
 app.use(
   cors({
-    origin: ["https://nursery-frontend-ywl9.onrender.com"],
+    origin: true,
   })
 );
+
 app.use(express.json());
 
 // Connect to MongoDB
